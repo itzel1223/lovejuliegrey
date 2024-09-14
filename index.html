@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie Grey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Pinyon+Script&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bimage">
+        <header>
+            <div class="logo">
+                <h3>Julie Grey</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Indulge yourself in a blissful experience</h2>
+                <p>Whether you need to park or rent out your space, Sparkitt makes it easy.</p>
+                <a href="#services" class="hero-button">Get Started</a>
+            </div>
+        </section>
+        </div>
+    <div class="container">
+        
+        <h1>Book an Appointment</h1>
+        <form id="booking-form" action="https://formspree.io/f/movaznwj" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number:</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+            <div class="form-group">
+                <label for="datetime-local">Select Date:</label>
+                <input type="datetime-local" id="datetime-local" name="datetime-local" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">Book Appointment</button>
+        </form>
+        <div id="confirmation" class="confirmation"></div>
+    </div>
+
+</body>
+</html>
